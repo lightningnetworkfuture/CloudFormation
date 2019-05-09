@@ -66,6 +66,9 @@ The DependsOn attributes on parameters are purely for API throttling -- e.g, Clo
 
 ### After Completion
 
+In the utilities/email.js
+line 17: change region: "us-east-1" to your base region.
+
 __Configure Git and Push to CodeCommit__
 
 `git clone` each of `Shared`, `Support`, `Admin`, `Main`, `Webhook`, `Renewer`, and `Helper` to a local machine. Then, run the following:
@@ -99,10 +102,6 @@ Upload speed test files to the S3 `SpeedTestBucket`, and be sure to grant public
 `https://<bucketname>.s3-accelerate.amazonaws.com/<filename>`
   
 ## 3-Base-Admin.yml
-
-In the utilities/email.js
-line 17: change region: "us-east-1" to your base region.
-
 Run in `Base` region. This is the Admin server that only a whitelisted IP has access to. It initializes the database schema, has a dashboard for Administrators, amongst other things.
 
 ### Initialize Database
