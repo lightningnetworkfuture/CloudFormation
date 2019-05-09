@@ -100,6 +100,9 @@ Upload speed test files to the S3 `SpeedTestBucket`, and be sure to grant public
   
 ## 3-Base-Admin.yml
 
+In the utilities/email.js
+line 17: change region: "us-east-1" to your base region.
+
 Run in `Base` region. This is the Admin server that only a whitelisted IP has access to. It initializes the database schema, has a dashboard for Administrators, amongst other things.
 
 ### Initialize Database
